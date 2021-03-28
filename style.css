@@ -1,0 +1,67 @@
+/*Para smart PC / Laptop*/
+body {
+	background-color: darkgrey;
+}
+
+@media (min-width: 900px) {
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: 1fr;
+	}
+}
+
+/*Para tablets*/
+@media (max-width: 900px) {
+	
+	body {
+		background-color: violet;
+	}
+
+	.container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	}
+}
+
+/*Para teléfonos*/
+@media (max-width: 600px) {
+	
+	body {
+		background-color: peru;
+	}
+
+	.container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	}
+}
+
+/*Para Smart Watch*/
+@media (max-width: 300px) {
+	
+	body {
+		background-color: skyblue;
+	}
+
+	.container {
+	display: grid;
+	grid-template-columns: repeat(1fr);
+	grid-template-rows: repeat(8, 1fr);
+	}
+}
+
+.grid-item {
+	height: auto;
+	margin: 4px;
+	text-align: center;
+}
+
+.grid-item img {
+	width: 135px;
+	height: 135px;
+	object-fit: cover;
+}
